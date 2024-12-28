@@ -5,8 +5,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Ваш API-ключ OpenAI
-const API_KEY = "sk-ваш-ключ"; // Замените на ваш API-ключ
-
+// const API_KEY = "sk-ваш-ключ"; // Замените на ваш API-ключ
+const API_KEY = process.env.API_KEY;
 // Middleware для обработки JSON
 app.use(express.json());
 
